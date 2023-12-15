@@ -19,6 +19,14 @@ import UpdatedProduct from "../UpdatedProduct/UpdatedProduct";
 import UpdateProductForm from "../UpdateProductForm/UpdateProductForm";
 import ProductList from "../ProductList/ProductList"
 
+import CreateGlassForm from "../CreateGlassForm/CreateGlassForm";
+import CreatedGlass from "../CreatedGlass/CreatedGlass";
+import Glass from "../Glass/Glass";
+import GlassList from "../GlassList/GlassList";
+import DeletedGlass from "../DeletedGlass/DeletedGlass";
+import UpdatedGlass from "../UpdatedGlass/UpdatedGlass";
+import UpdateGlassForm from "../UpdateGlassForm/UpdateGlassForm";
+
 
 //Produkt
 import CreatedProduct from "../CreatedProduct/CreatedProduct";
@@ -39,6 +47,14 @@ export function AppRoutes() {
                 <Route path="/deleteduser/:id" element={<DeletedUser />} />
                 <Route path="/updateduser/:id" element={<UpdatedUser />} />
                 <Route path="/updateuserform/:id" element={<UpdateUserForm />} />
+
+                <Route path="/createglass" element={<CreateGlassForm />}/>
+                <Route path="/createdglass/:id" element={<CreatedGlass />} />
+                <Route path="/glass/:id" element={<Glass />} />
+                <Route path="/glasses" element={<GlassList />} />
+                <Route path="/deletedglass/:id" element={<DeletedGlass />} />
+                <Route path="/updatedglass/:id" element={<UpdatedGlass />} />
+                <Route path="/updateglassform/:id" element={<UpdateGlassForm />} />
                 
                 <Route path="/createproduct" element={<CreateProductForm />}/>
                 <Route path="/createdproduct/:id" element={<CreatedProduct />} />
